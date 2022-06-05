@@ -237,8 +237,7 @@ p {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.feature-item-icon {
-  width: 270px;
+.feature-icon {
   height: 120px;
   background: var(--button-bg-color);
   border-radius: 4px;
@@ -277,6 +276,7 @@ p {
   font-size: 36px;
   line-height: 1.17;
   margin-bottom: 50px;
+  text-align: center;
 }
 .team-title {
   margin-bottom: 10px;
@@ -326,19 +326,14 @@ p {
   fill: var(--accent-button-color);
 }
 /*Постоянные клиенты*/
-.container-customers {
-  text-align: center;
-}
-.list-customers {
-  display: flex;
-}
 .customers-item {
   width: 170px;
   height: 92px;
-  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
-.customers-item:last-child {
-  margin-right: 0;
+.card-set .customers-item {
+  flex-basis: calc(100% / 6 - 30px);
 }
 .customers-link {
   width: 100%;
@@ -395,10 +390,7 @@ p {
 }
 .footer-container {
   display: flex;
-}
-.footer-soc {
-  margin-left: 70px;
-  margin-top: 12px;
+  align-items: baseline;
 }
 .footer-title {
   line-height: 1.14;
@@ -415,6 +407,9 @@ p {
 }
 .footer .soc-icon {
   fill: var(--accent-button-color);
+}
+.footer-contact {
+  margin-right: 70px;
 }
 
 /* Portfolio */
